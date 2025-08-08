@@ -1,3 +1,77 @@
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 1rem 1rem !important;
+    gap: 1rem !important;
+  }
+  nav > div:last-child {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .econet-hero {
+    padding: 2rem 0.5rem 1.5rem 0.5rem !important;
+  }
+  .econet-cards {
+    flex-direction: column !important;
+    gap: 1.25rem !important;
+    align-items: stretch !important;
+  }
+  .econet-card {
+    min-width: 0 !important;
+    width: 100% !important;
+    padding: 1.25rem 1rem !important;
+  }
+}
+:root {
+  --econet-blue: #003399;
+  --econet-green: #00b140;
+  --econet-light-gray: #f4f6fa;
+  --econet-dark: #222;
+  --econet-white: #fff;
+  --econet-accent: #009fe3;
+  --econet-radius: 16px;
+  --econet-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  --econet-font: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+}
+
+body {
+  font-family: var(--econet-font);
+  background: var(--econet-light-gray);
+  color: var(--econet-dark);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--econet-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: var(--econet-font);
+  border-radius: var(--econet-radius);
+  background: var(--econet-blue);
+  color: var(--econet-white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: var(--econet-shadow);
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: var(--econet-accent);
+}
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

@@ -10,7 +10,7 @@ export default function SEO({ title, description }: { title: string; description
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="Sonic Software Solutions" />
+      <meta property="og:site_name" content="TrapDigital Software Consultancy" />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
@@ -18,7 +18,7 @@ export default function SEO({ title, description }: { title: string; description
         {
           "@context": "https://schema.org",
           "@type": "Organization",
-          "name": "Sonic Software Solutions",
+          "name": "TrapDigital Software Consultancy",
           "url": "https://sonicsoftwaresolutions.com",
           "contactPoint": {
             "@type": "ContactPoint",
