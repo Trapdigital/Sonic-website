@@ -16,11 +16,9 @@ export default function AdminDashboard() {
   const [newCaseDate, setNewCaseDate] = useState('');
   const [newCaseImageId, setNewCaseImageId] = useState('');
   const [newCaseBody, setNewCaseBody] = useState('');
-  const [blogRefresh, setBlogRefresh] = useState(0);
-  const [caseRefresh, setCaseRefresh] = useState(0);
 
-  const blog = useBlogPosts(blogRefresh);
-  const caseStudies = useCaseStudies(caseRefresh);
+  const blog = useBlogPosts();
+  const caseStudies = useCaseStudies();
   // Google Analytics stats are viewed in the GA dashboard. No direct API widget is provided here.
 
   if (!loggedIn) return <AdminLogin onLogin={() => setLoggedIn(true)} />;
@@ -43,11 +41,9 @@ export default function AdminDashboard() {
     setNewBlogDate('');
     setNewBlogImageId('');
     setNewBlogBody('');
-    setBlogRefresh(r => r + 1);
   }
   async function handleDeleteBlog(id: string) {
     await sanityClient.delete(id);
-    setBlogRefresh(r => r + 1);
   }
   async function handleAddCase(e: React.FormEvent) {
     e.preventDefault();
@@ -64,11 +60,9 @@ export default function AdminDashboard() {
     setNewCaseDate('');
     setNewCaseImageId('');
     setNewCaseBody('');
-    setCaseRefresh(r => r + 1);
   }
   async function handleDeleteCase(id: string) {
     await sanityClient.delete(id);
-    setCaseRefresh(r => r + 1);
   }
 
   return (
