@@ -86,9 +86,9 @@ function Homepage() {
         <h2 style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>Trusted by Leading Clients</h2>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
           {/* Placeholder logos, replace with real client logos */}
-          <span style={{ fontWeight: 'bold', color: '#646cff' }}>Client A</span>
-          <span style={{ fontWeight: 'bold', color: '#646cff' }}>Client B</span>
-          <span style={{ fontWeight: 'bold', color: '#646cff' }}>Client C</span>
+          <span style={{ fontWeight: 'bold', color: '#646cff' }}>Ray James Medical Care</span>
+          <span style={{ fontWeight: 'bold', color: '#646cff' }}>Seraph Blush & Beauty</span>
+          <span style={{ fontWeight: 'bold', color: '#646cff' }}>Tatenda Nashe</span>
         </div>
         <p style={{ marginTop: '1rem', color: '#888' }}>See our case studies for real-world results.</p>
       </section>
@@ -192,7 +192,7 @@ function AboutUs() {
         </div>
         <div className="econet-card" style={{ flex: '1 1 220px', background: 'var(--econet-white)', borderRadius: '20px', padding: '2rem 1.5rem', textAlign: 'center', boxShadow: 'var(--econet-shadow)', marginBottom: 16 }}>
           <div style={{ width: 80, height: 80, borderRadius: '50%', background: '#0a2540', margin: '0 auto 1rem auto', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: '2rem', fontWeight: 700 }}>S</div>
-          <h3 style={{ margin: '0 0 0.5rem 0', color: 'var(--econet-blue)', fontWeight: 700 }}>Dakarai Bingo</h3>
+          <h3 style={{ margin: '0 0 0.5rem 0', color: 'var(--econet-blue)', fontWeight: 700 }}> Prince Dakarai Bingo</h3>
           <p style={{ color: 'var(--econet-dark)' }}>Project Manager. Dedicated to transparency and client success.</p>
         </div>
       </div>
@@ -295,9 +295,9 @@ function Contact() {
         <p style={{ color: 'var(--econet-dark)' }}>We respect your privacy. Your information will never be shared.</p>
       </div>
       <div style={{ textAlign: 'center', color: 'var(--econet-blue)', fontWeight: 600 }}>
-        <p><strong>Email:</strong> contact@trapdigitalsoftware.com</p>
-        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-        <p><strong>Address:</strong> 123 Innovation Drive, Suite 100, Tech City</p>
+        <p><strong>Email:</strong> boolop263@gmail.com</p>
+        <p><strong>Phone:</strong> +263 783 914 316</p>
+        <p><strong>Address:</strong> 55th St, Kuwadzana 5, Harare</p>
       </div>
       <div style={{ textAlign: 'center', marginTop: '2rem', color: '#888' }}>
         <p>We'll get back to you as soon as possible. Thank you for reaching out!</p>
