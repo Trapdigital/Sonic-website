@@ -76,13 +76,27 @@ const Chatbot: React.FC = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages, open]);
 
-  function handleSend(e: React.FormEvent) {
+  async function handleSend(e: React.FormEvent) {
     e.preventDefault();
     if (!input.trim()) return;
     setMessages(prev => [...prev, { sender: 'user', text: input }]);
-    setTimeout(() => {
+    setTimeout(async () => {
       const botReply = getBotResponse(input);
       setMessages(prev => [...prev, { sender: 'bot', text: botReply }]);
+      // If bot suggests human agent, forward chat transcript to agent email
+      if (botReply.toLowerCase().includes('connecting you to a human agent')) {
+        const transcript = messages.map(m => `${m.sender}: ${m.text}`).join('\n') + `\nuser: ${input}`;
+        try {
+          await fetch('http://localhost:4000/send-chat', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ transcript, to: 'boolop263@gmail.com' })
+          });
+          setMessages(prev => [...prev, { sender: 'bot', text: 'A human agent has been contacted. You will receive a reply here as soon as possible.' }]);
+        } catch (err) {
+          setMessages(prev => [...prev, { sender: 'bot', text: 'Sorry, there was a problem contacting a human agent. Please try again later.' }]);
+        }
+      }
     }, 600);
     setInput('');
   }
@@ -124,7 +138,7 @@ const Chatbot: React.FC = () => {
               value={input}
               onChange={e => setInput(e.target.value)}
               placeholder="Type your message..."
-              style={{ flex: 1, borderRadius: 8, border: '1px solid #b2ebf2', padding: '0.5rem', fontSize: '1rem', background: '#fff' }}
+              style={{ flex: 1, borderRadius: 8, border: '1px solid #b2ebf2', padding: '0.5rem', fontSize: '1rem', background: '#fff', color: '#222' }}
               aria-label="Chatbot message input"
             />
             <button type="submit" style={{ marginLeft: 8, background: '#0a2540', color: '#fff', border: 'none', borderRadius: 8, padding: '0.5rem 1.25rem', fontWeight: 600, cursor: 'pointer', boxShadow: '0 1px 4px rgba(0,0,0,0.08)' }}>
