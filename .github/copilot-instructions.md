@@ -1,0 +1,3 @@
+<!-- Use this file to provide workspace-specific custom instructions to Copilot. For more details, visit https://code.visualstudio.com/docs/copilot/copilot-customization#_use-a-githubcopilotinstructionsmd-file -->
+
+This project is a production-ready React (TypeScript, SWC) web application for a software development company. Follow minimalist, professional design, accessibility (WCAG 2.1), Core Web Vitals optimization, and component-based architecture. Pages: Homepage, Services, Case Studies, About Us, Blog, Contact. Use Zustand for state management if needed. Prepare for deployment to Vercel or Netlify.
