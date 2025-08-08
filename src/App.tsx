@@ -149,19 +149,19 @@ function CaseStudies() {
       <div className="econet-cards" style={{ display: 'flex', gap: '2.5rem', flexWrap: 'wrap', justifyContent: 'center' }}>
         {/* Example case study card, replace with real data */}
         <div className="econet-card" style={{ minWidth: 220, flex: '1 1 280px', padding: '2rem 1.5rem', background: 'var(--econet-white)', borderRadius: '20px', boxShadow: 'var(--econet-shadow)', marginBottom: 16 }}>
-          <h3 style={{ marginTop: 0, color: 'var(--econet-blue)', fontWeight: 700 }}>Client A: Healthcare App</h3>
+          <h3 style={{ marginTop: 0, color: 'var(--econet-blue)', fontWeight: 700 }}>Ray James Medical Care: Healthcare App</h3>
           <p style={{ color: 'var(--econet-dark)' }}><strong>Problem:</strong> Inefficient patient communication.</p>
           <p style={{ color: 'var(--econet-dark)' }}><strong>Solution:</strong> Built a secure, intuitive mobile app for real-time messaging and appointment management.</p>
           <p style={{ color: 'var(--econet-dark)' }}><strong>Impact:</strong> Increased patient satisfaction and reduced missed appointments by 30%.</p>
         </div>
         <div className="econet-card" style={{ minWidth: 220, flex: '1 1 280px', padding: '2rem 1.5rem', background: 'var(--econet-white)', borderRadius: '20px', boxShadow: 'var(--econet-shadow)', marginBottom: 16 }}>
-          <h3 style={{ marginTop: 0, color: 'var(--econet-blue)', fontWeight: 700 }}>Client B: E-Commerce Platform</h3>
+          <h3 style={{ marginTop: 0, color: 'var(--econet-blue)', fontWeight: 700 }}>Seraph Blush & Beauty: E-Commerce Platform</h3>
           <p style={{ color: 'var(--econet-dark)' }}><strong>Problem:</strong> Low conversion rates and poor mobile experience.</p>
           <p style={{ color: 'var(--econet-dark)' }}><strong>Solution:</strong> Redesigned the UI/UX and optimized performance for mobile users.</p>
           <p style={{ color: 'var(--econet-dark)' }}><strong>Impact:</strong> Boosted sales by 25% and improved user reviews.</p>
         </div>
         <div className="econet-card" style={{ minWidth: 220, flex: '1 1 280px', padding: '2rem 1.5rem', background: 'var(--econet-white)', borderRadius: '20px', boxShadow: 'var(--econet-shadow)', marginBottom: 16 }}>
-          <h3 style={{ marginTop: 0, color: 'var(--econet-blue)', fontWeight: 700 }}>Client C: SaaS Dashboard</h3>
+          <h3 style={{ marginTop: 0, color: 'var(--econet-blue)', fontWeight: 700 }}>Tatenda Nashe: SaaS Dashboard</h3>
           <p style={{ color: 'var(--econet-dark)' }}><strong>Problem:</strong> Complex data, hard to use for non-technical users.</p>
           <p style={{ color: 'var(--econet-dark)' }}><strong>Solution:</strong> Created a clean, accessible dashboard with guided onboarding.</p>
           <p style={{ color: 'var(--econet-dark)' }}><strong>Impact:</strong> Enabled all team members to make data-driven decisions, increasing engagement.</p>
@@ -182,23 +182,23 @@ function AboutUs() {
         {/* Example team bios, replace with real photos and bios */}
         <div className="econet-card" style={{ flex: '1 1 220px', background: 'var(--econet-white)', borderRadius: '20px', padding: '2rem 1.5rem', textAlign: 'center', boxShadow: 'var(--econet-shadow)', marginBottom: 16 }}>
           <div style={{ width: 80, height: 80, borderRadius: '50%', background: '#0a2540', margin: '0 auto 1rem auto', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: '2rem', fontWeight: 700 }}>A</div>
-          <h3 style={{ margin: '0 0 0.5rem 0', color: 'var(--econet-blue)', fontWeight: 700 }}>Alex Kim</h3>
+          <h3 style={{ margin: '0 0 0.5rem 0', color: 'var(--econet-blue)', fontWeight: 700 }}>Tanya Kayz</h3>
           <p style={{ color: 'var(--econet-dark)' }}>Lead Developer. Passionate about human-centered design and scalable systems.</p>
         </div>
         <div className="econet-card" style={{ flex: '1 1 220px', background: 'var(--econet-white)', borderRadius: '20px', padding: '2rem 1.5rem', textAlign: 'center', boxShadow: 'var(--econet-shadow)', marginBottom: 16 }}>
           <div style={{ width: 80, height: 80, borderRadius: '50%', background: '#0a2540', margin: '0 auto 1rem auto', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: '2rem', fontWeight: 700 }}>J</div>
-          <h3 style={{ margin: '0 0 0.5rem 0', color: 'var(--econet-blue)', fontWeight: 700 }}>Jamie Lee</h3>
+          <h3 style={{ margin: '0 0 0.5rem 0', color: 'var(--econet-blue)', fontWeight: 700 }}>Ngonie Garry</h3>
           <p style={{ color: 'var(--econet-dark)' }}>UI/UX Designer. Focused on accessibility and intuitive user experiences.</p>
         </div>
         <div className="econet-card" style={{ flex: '1 1 220px', background: 'var(--econet-white)', borderRadius: '20px', padding: '2rem 1.5rem', textAlign: 'center', boxShadow: 'var(--econet-shadow)', marginBottom: 16 }}>
           <div style={{ width: 80, height: 80, borderRadius: '50%', background: '#0a2540', margin: '0 auto 1rem auto', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: '2rem', fontWeight: 700 }}>S</div>
-          <h3 style={{ margin: '0 0 0.5rem 0', color: 'var(--econet-blue)', fontWeight: 700 }}>Sam Patel</h3>
+          <h3 style={{ margin: '0 0 0.5rem 0', color: 'var(--econet-blue)', fontWeight: 700 }}>Dakarai Bingo</h3>
           <p style={{ color: 'var(--econet-dark)' }}>Project Manager. Dedicated to transparency and client success.</p>
         </div>
       </div>
       <section style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
         <h3 style={{ color: 'var(--econet-blue)', fontWeight: 700 }}>Our History</h3>
-        <p style={{ color: 'var(--econet-dark)' }}>Founded in 2015, TrapDigital Software Consultancy has delivered impactful software for clients worldwide, always prioritizing human needs and business outcomes.</p>
+        <p style={{ color: 'var(--econet-dark)' }}>Founded in 2024, TrapDigital Software Solutions has delivered impactful software for clients worldwide, always prioritizing human needs and business outcomes.</p>
       </section>
       <section style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
         <h3 style={{ color: 'var(--econet-blue)', fontWeight: 700 }}>Our Values</h3>
